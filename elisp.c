@@ -171,7 +171,7 @@ emacs_value get_buffer_window_list(emacs_env *env) {
 }
 
 emacs_value selected_window(emacs_env *env) {
-  return env->funcall(env, Fselected_window, 0, (emacs_value[]){});
+  return env->funcall(env, Fselected_window, 0, (emacs_value[]){0});
 }
 
 void set_cursor_type(emacs_env *env, emacs_value cursor_type) {
